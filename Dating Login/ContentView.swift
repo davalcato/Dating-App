@@ -19,3 +19,17 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+struct Home: View {
+    
+    var body: some View{
+        
+        VStack{
+            Image("logo")
+            .resizable()
+            .frame(width: 200, height: 180)
+        }
+    }
+}
+
+
