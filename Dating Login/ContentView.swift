@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         
         ZStack{
@@ -28,12 +29,28 @@ struct ContentView_Previews: PreviewProvider {
 
 struct Home: View {
     
+    @State var index = 0
     var body: some View{
         
         VStack{
             Image("logo")
             .resizable()
             .frame(width: 200, height: 180)
+            
+            HStack{
+                
+                Button(action: {
+                    
+                }) {
+                    
+                    Text("Existing")
+                        .foregroundColor(self.index == 0 ? .black : .white)
+                        .fontWeight(.bold)
+                    
+                }
+            }
+            
+            
         }
     }
 }
