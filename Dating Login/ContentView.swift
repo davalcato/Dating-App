@@ -68,7 +68,10 @@ struct Home: View {
                     
                 }.background(self.index == 1 ? Color.white : Color.clear)
                 .clipShape(Capsule())
-            }
+                
+                
+            }.background(Color.black.opacity(0.1))
+            .clipShape(Capsule())
         }
     }
 }
