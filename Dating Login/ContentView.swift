@@ -41,16 +41,34 @@ struct Home: View {
                 
                 Button(action: {
                     
+                    self.index = 0
+                    
                 }) {
                     
                     Text("Existing")
                         .foregroundColor(self.index == 0 ? .black : .white)
                         .fontWeight(.bold)
+                        .padding(.vertical, 10)
+                        .frame(width: (UIScreen.main.bounds.width - 50) / 2)
                     
-                }
+                }.background(self.index == 0 ? Color.white : Color.clear)
+                .clipShape(Capsule())
+                
+                Button(action: {
+                    
+                    self.index = 1
+                    
+                }) {
+                    
+                    Text("New")
+                        .foregroundColor(self.index == 1 ? .black : .white)
+                        .fontWeight(.bold)
+                        .padding(.vertical, 10)
+                        .frame(width: (UIScreen.main.bounds.width - 50) / 2)
+                    
+                }.background(self.index == 1 ? Color.white : Color.clear)
+                .clipShape(Capsule())
             }
-            
-            
         }
     }
 }
