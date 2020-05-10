@@ -17,9 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let awsStarted = AWSMobileClient.sharedInstance().interceptApplication(application, didFinishLaunchingWithOptions: launchOptions)
-        
-        return awsStarted
+//        let awsStarted = AWSMobileClient.sharedInstance().interceptApplication(application, didFinishLaunchingWithOptions: launchOptions)
+        initializeAWSMobileClient()
+        return true
+    }
+    
+    func initializeAWSMobileClient(){
+       AWSMobileClient.default().initialize { (userState, error) in
+           if let error = error {
+               print("Error initializing AWSMobileClient: \(error.localizedDescription)")
+           } else if let userState = userState {
+               print("AWSMobileClient initialized. Current UserState: \(userState.rawValue)")
+           }
+       }
     }
 
     // MARK: UISceneSession Lifecycle
