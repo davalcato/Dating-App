@@ -16,7 +16,9 @@
 		75C36501246250CD0011F528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C364FF246250CD0011F528 /* LaunchScreen.storyboard */; };
 		75C3650C246250CD0011F528 /* Dating_LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3650B246250CD0011F528 /* Dating_LoginTests.swift */; };
 		75C36517246250CD0011F528 /* Dating_LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C36516246250CD0011F528 /* Dating_LoginUITests.swift */; };
-		75F0DB6C2467AC3C007D037D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 75F0DB6B2467AC3C007D037D /* awsconfiguration.json */; };
+		75C8184A246A2EEC00CCF1D7 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C81849246A2EEC00CCF1D7 /* AppSettings.swift */; };
+		75F0DB6E2467AEF4007D037D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F0DB6D2467AEF4007D037D /* SignInViewController.swift */; };
+		75F0DB722467B2CA007D037D /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 75F0DB712467B2C9007D037D /* awsconfiguration.json */; };
 		8BACF8579C8A97AF736C9121 /* Pods_Dating_Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB1B33FB07E8D73C0A173F6 /* Pods_Dating_Login.framework */; };
 		E48A773729DF6186E623914C /* Pods_Dating_LoginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9BE78D290CB69A0EB00981 /* Pods_Dating_LoginTests.framework */; };
 /* End PBXBuildFile section */
@@ -57,7 +59,9 @@
 		75C36512246250CD0011F528 /* Dating LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dating LoginUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C36516246250CD0011F528 /* Dating_LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dating_LoginUITests.swift; sourceTree = "<group>"; };
 		75C36518246250CD0011F528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		75F0DB6B2467AC3C007D037D /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
+		75C81849246A2EEC00CCF1D7 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		75F0DB6D2467AEF4007D037D /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		75F0DB712467B2C9007D037D /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 		91B7F9932A184A5038FA0AA5 /* Pods-Dating Login-Dating LoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dating Login-Dating LoginUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dating Login-Dating LoginUITests/Pods-Dating Login-Dating LoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AAD2033D6249C76EF3E1C8E6 /* Pods-Dating Login.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dating Login.release.xcconfig"; path = "Target Support Files/Pods-Dating Login/Pods-Dating Login.release.xcconfig"; sourceTree = "<group>"; };
 		B9C2422E9617F8122D911B9E /* Pods-Dating Login.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dating Login.debug.xcconfig"; path = "Target Support Files/Pods-Dating Login/Pods-Dating Login.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,11 +134,13 @@
 			children = (
 				75C364F4246250C90011F528 /* AppDelegate.swift */,
 				75C364F6246250C90011F528 /* SceneDelegate.swift */,
+				75F0DB6D2467AEF4007D037D /* SignInViewController.swift */,
 				75C364F8246250C90011F528 /* ContentView.swift */,
+				75C81849246A2EEC00CCF1D7 /* AppSettings.swift */,
 				75C364FA246250CD0011F528 /* Assets.xcassets */,
 				75C364FF246250CD0011F528 /* LaunchScreen.storyboard */,
+				75F0DB712467B2C9007D037D /* awsconfiguration.json */,
 				75C36502246250CD0011F528 /* Info.plist */,
-				75F0DB6B2467AC3C007D037D /* awsconfiguration.json */,
 				75C364FC246250CD0011F528 /* Preview Content */,
 			);
 			path = "Dating Login";
@@ -290,10 +296,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F0DB722467B2CA007D037D /* awsconfiguration.json in Resources */,
 				75C36501246250CD0011F528 /* LaunchScreen.storyboard in Resources */,
 				75C364FE246250CD0011F528 /* Preview Assets.xcassets in Resources */,
 				75C364FB246250CD0011F528 /* Assets.xcassets in Resources */,
-				75F0DB6C2467AC3C007D037D /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,8 +461,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F0DB6E2467AEF4007D037D /* SignInViewController.swift in Sources */,
 				75C364F5246250C90011F528 /* AppDelegate.swift in Sources */,
 				75C364F7246250C90011F528 /* SceneDelegate.swift in Sources */,
+				75C8184A246A2EEC00CCF1D7 /* AppSettings.swift in Sources */,
 				75C364F9246250C90011F528 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

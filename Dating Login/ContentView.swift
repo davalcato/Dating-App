@@ -41,6 +41,10 @@ struct Home : View {
     @State var index = 0
     
     var body : some View{
+        let signInVC = SignInViewController()
+        
+        return ZStack {
+            signInVC
         
         VStack{
             
@@ -140,8 +144,10 @@ struct Home : View {
                 }.background(Color.white)
                 .clipShape(Circle())
                 
+                VStack {
+                
                 Button(action: {
-                    
+                    signInVC.signInWithGoogle()
                 }) {
                     
                     Image("google")
@@ -156,6 +162,8 @@ struct Home : View {
             
         }
         .padding()
+            }
+        }
     }
 }
 
