@@ -1,0 +1,97 @@
+PODS:
+  - AppAuth (1.3.0):
+    - AppAuth/Core (= 1.3.0)
+    - AppAuth/ExternalUserAgent (= 1.3.0)
+  - AppAuth/Core (1.3.0)
+  - AppAuth/ExternalUserAgent (1.3.0)
+  - AWSAuthCore (2.13.3):
+    - AWSCore (= 2.13.3)
+  - AWSAuthUI (2.13.3):
+    - AWSAuthCore (= 2.13.3)
+    - AWSCore (= 2.13.3)
+  - AWSCognitoIdentityProvider (2.13.3):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.13.3)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.13.3)
+  - AWSFacebookSignIn (2.13.3):
+    - AWSAuthCore (= 2.13.3)
+    - FBSDKCoreKit (= 5.8)
+    - FBSDKLoginKit (= 5.8)
+  - AWSGoogleSignIn (2.13.3):
+    - AWSAuthCore (= 2.13.3)
+  - AWSMobileClient (2.13.3):
+    - AWSAuthCore (= 2.13.3)
+    - AWSCognitoIdentityProvider (= 2.13.3)
+  - AWSUserPoolsSignIn (2.13.3):
+    - AWSAuthCore (= 2.13.3)
+    - AWSCognitoIdentityProvider (= 2.13.3)
+  - FBSDKCoreKit (5.8.0):
+    - FBSDKCoreKit/Basics (= 5.8.0)
+    - FBSDKCoreKit/Core (= 5.8.0)
+  - FBSDKCoreKit/Basics (5.8.0)
+  - FBSDKCoreKit/Core (5.8.0):
+    - FBSDKCoreKit/Basics
+  - FBSDKLoginKit (5.8.0):
+    - FBSDKLoginKit/Login (= 5.8.0)
+  - FBSDKLoginKit/Login (5.8.0):
+    - FBSDKCoreKit (~> 5.0)
+  - GoogleSignIn (5.0.2):
+    - AppAuth (~> 1.2)
+    - GTMAppAuth (~> 1.0)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - GTMAppAuth (1.0.0):
+    - AppAuth/Core (~> 1.0)
+    - GTMSessionFetcher (~> 1.1)
+  - GTMSessionFetcher (1.4.0):
+    - GTMSessionFetcher/Full (= 1.4.0)
+  - GTMSessionFetcher/Core (1.4.0)
+  - GTMSessionFetcher/Full (1.4.0):
+    - GTMSessionFetcher/Core (= 1.4.0)
+
+DEPENDENCIES:
+  - AWSAuthUI
+  - AWSFacebookSignIn
+  - AWSGoogleSignIn
+  - AWSMobileClient
+  - AWSUserPoolsSignIn
+  - GoogleSignIn
+
+SPEC REPOS:
+  trunk:
+    - AppAuth
+    - AWSAuthCore
+    - AWSAuthUI
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSFacebookSignIn
+    - AWSGoogleSignIn
+    - AWSMobileClient
+    - AWSUserPoolsSignIn
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+    - GoogleSignIn
+    - GTMAppAuth
+    - GTMSessionFetcher
+
+SPEC CHECKSUMS:
+  AppAuth: 73574f3013a1e65b9601a3ddc8b3158cce68c09d
+  AWSAuthCore: 93b71ac38596e75790015c7299c725bb09ae1d5f
+  AWSAuthUI: 606e0585daf951db263e098a792aad44b21476bd
+  AWSCognitoIdentityProvider: 3480819d983e78eda7a43e141273756784be30cb
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: fc361166b595e3c0183c55987743b295646c39d2
+  AWSFacebookSignIn: 651bdb4cc9675411d7f8b107f154e7e5a0b5010a
+  AWSGoogleSignIn: 8b8bb472127b574cde0f7dcc5e66d04ce24d1da7
+  AWSMobileClient: 9149b664d1a89279bd49d36598c7afc38a63d7d1
+  AWSUserPoolsSignIn: b32e3c69bb29618434da9b3b0367ccc214d85fc8
+  FBSDKCoreKit: e7dcac0aabcfb09d0166998edd95fe3b05a0ce5d
+  FBSDKLoginKit: 1b0cf04df0370b37404213157b060d6666ede814
+  GoogleSignIn: 7137d297ddc022a7e0aa4619c86d72c909fa7213
+  GTMAppAuth: 4deac854479704f348309e7b66189e604cf5e01e
+  GTMSessionFetcher: 6f5c8abbab8a9bce4bb3f057e317728ec6182b10
+
+PODFILE CHECKSUM: 88ff2a732d0c2bec341ba22c80f9b12ed4287dc2
+
+COCOAPODS: 1.9.1

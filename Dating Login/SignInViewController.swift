@@ -10,6 +10,8 @@ import SwiftUI
 import AWSMobileClient
 
 struct SignInViewController: UIViewControllerRepresentable {
+    @ObservedObject var settings = AppSettings()
+    
     let navController =  UINavigationController()
     
     func makeUIViewController(context: Context) -> UINavigationController {

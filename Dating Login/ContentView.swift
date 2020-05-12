@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var settings = AppSettings()
+    
     var body: some View {
         
         ZStack{
@@ -309,7 +311,6 @@ struct SignUp : View {
             .background(Color.white)
             .cornerRadius(10)
             .padding(.top, 25)
-            
             
             Button(action: {
                 
