@@ -12,7 +12,7 @@ target 'Dating Login' do
   pod 'AWSFacebookSignIn'
   pod ‘AWSGoogleSignIn'
   pod ‘GoogleSignIn’
-
+  pod 'Firebase/Analytics'
 
   target 'Dating LoginTests' do
     inherit! :search_paths

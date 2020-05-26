@@ -7,6 +7,9 @@
 //
 
 import SwiftUI
+import Firebase
+import GoogleSignIn
+
 
 struct ContentView: View {
     @ObservedObject var settings = AppSettings()
@@ -148,18 +151,20 @@ struct Home : View {
                 
                 VStack {
                 
-                Button(action: {
-                    signInVC.signInWithGoogle()
-                }) {
+                    GoogleSignView().frame(width: 150, height: 55)
                     
-                    Image("google")
-                        .renderingMode(.original)
-                        .padding()
-                    
-                }.background(Color.white)
-                .clipShape(Circle())
-                .padding(.leading, 25)
-            }
+//                Button(action: {
+//                    signInVC.signInWithGoogle()
+//                }) {
+//
+//                    Image("google")
+//                        .renderingMode(.original)
+//                        .padding()
+//
+//                }.background(Color.white)
+//                .clipShape(Circle())
+//                .padding(.leading, 25)
+//            }
             .padding(.top, 10)
             
         }
@@ -334,4 +339,23 @@ struct SignUp : View {
     }
 }
 
+struct GoogleSignView : UIViewRepresentable {
+    
+    func makeUIView(context: UIViewRepresentableContext<GoogleSignView>) -> GIDSignInButton {
+        
+        let button = GIDSignInButton()
+        button.colorScheme = .dark
+        GIDSignIn.sharedInstance()?.presentingViewController = UIApplication.shared.windows.last?.rootViewController
+        
+        return button
+        
+    }
+    
+    func updateUIView(_ uiView: GIDSignInButton, context: UIViewRepresentableContext<GoogleSignView>) {
+        
+        }
+    
+    }
+
+}
 

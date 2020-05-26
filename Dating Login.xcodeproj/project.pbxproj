@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		72FCF05DCE78D48EF48D5DC4 /* Pods_Dating_Login_Dating_LoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7044C7FBD7C9EE36F3305FCD /* Pods_Dating_Login_Dating_LoginUITests.framework */; };
+		7506183A247C99D3007ED070 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 75061839247C99D3007ED070 /* GoogleService-Info.plist */; };
 		75C364F5246250C90011F528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C364F4246250C90011F528 /* AppDelegate.swift */; };
 		75C364F7246250C90011F528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C364F6246250C90011F528 /* SceneDelegate.swift */; };
 		75C364F9246250C90011F528 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C364F8246250C90011F528 /* ContentView.swift */; };
@@ -45,6 +46,7 @@
 		4E13FDF9F8F382EF799DC32B /* Pods-Dating Login-Dating LoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dating Login-Dating LoginUITests.release.xcconfig"; path = "Target Support Files/Pods-Dating Login-Dating LoginUITests/Pods-Dating Login-Dating LoginUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5E9BE78D290CB69A0EB00981 /* Pods_Dating_LoginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dating_LoginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7044C7FBD7C9EE36F3305FCD /* Pods_Dating_Login_Dating_LoginUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dating_Login_Dating_LoginUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75061839247C99D3007ED070 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		75C364F1246250C80011F528 /* Dating Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dating Login.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C364F4246250C90011F528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75C364F6246250C90011F528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				75C364FA246250CD0011F528 /* Assets.xcassets */,
 				75C364FF246250CD0011F528 /* LaunchScreen.storyboard */,
 				75F0DB712467B2C9007D037D /* awsconfiguration.json */,
+				75061839247C99D3007ED070 /* GoogleService-Info.plist */,
 				75C36502246250CD0011F528 /* Info.plist */,
 				75C364FC246250CD0011F528 /* Preview Content */,
 			);
@@ -298,6 +301,7 @@
 			files = (
 				75F0DB722467B2CA007D037D /* awsconfiguration.json in Resources */,
 				75C36501246250CD0011F528 /* LaunchScreen.storyboard in Resources */,
+				7506183A247C99D3007ED070 /* GoogleService-Info.plist in Resources */,
 				75C364FE246250CD0011F528 /* Preview Assets.xcassets in Resources */,
 				75C364FB246250CD0011F528 /* Assets.xcassets in Resources */,
 			);
